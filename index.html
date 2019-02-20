@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang=”pl”>
+<head>
+<title>Moja idealna strona w HTML5</title>
+
+<meta charset="UTF-8">
+
+<meta name="description" content="Opis naszej strony">
+<meta name="keywords" content="Tutaj s³owa kluczowe oddzielone przecinkiem">
+
+<!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="main.css" />
+
+</head>
+<body>
+
+<!— G³ówny nag³ówek strony -->
+<header role=”banner”>
+<!—Grupa nag³ówków, u¿cie hgroup -->
+   <hgroup>
+      <h1><a href="http://moja-strona.pl " rel="home">Mojastrona.pl – nasza najlepsza strona HTML5 </a></h1>
+      <h2>Nasze has³o reklamowe</h2>
+   </hgroup>
+
+<!—Rozpoczynamy menu, przy u¿yciu nav -->
+   <nav id="menu" role="navigation">
+      <ul>
+         <li><a href="index.html">G³ówna</a></li>
+         <li><a href="link.html">O Mnie</a></li>
+         <li><a href="link.html">Kontakt</a></li>
+      </ul>
+   </nav>
+</header>
+
+<!—G³ówna czêœæ strony, przy u¿yciu znacznika main -->
+<main role=”main”>
+   <hgroup role=”heading”>
+   <h1>Aktualnoœci</h1>
+   <h3>Aktualnoœci ze œwiata IT w jednym miejscu</h3>
+   </hgroup>
+<!—Rozpoczynamy pierwszy artyku³ (article) -->
+   <article role=”article”>
+<!—Tym razem jest nag³ówek dla pojedynczego artyku³u -->
+     <header>
+     <h2>Tytu³ newsa pierwszego</h2>
+     <p class=”news-info”>
+<!—informacja o autorze i data dodania aktualnoœci – „time” -->
+Autor: rwd5 | <time datetime="2013-02-20">20 lutego</time>
+      </p>
+      </header>
+
+<!—Sekcja (section) z treœci¹ newsa -->
+      <section>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, elit magna vulputate arcu, vel tempus metus leo non est. Etiam sit amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.</p>
+      </section>
+   </article>
+
+   <article role=”article”>
+      <header>
+      <h2>Tytu³ newsa drugiego</h2>
+      <p class=”news-info”>
+Autor: rwd5 | <time datetime="2013-02-21">21 lutego</time>
+      </p>
+      </header>
+
+      <section>
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Proin nibh augue, suscipit a, scelerisque sed, lacinia in, mi. Cras vel lorem. Etiam pellentesque aliquet tellus. Phasellus pharetra nulla ac diam. Quisque semper justo at risus. Donec venenatis, turpis vel hendrerit interdum, dui ligula ultricies purus, sed posuere libero dui id orci. Nam congue, pede vitae dapibus aliquet, e lit magna vulputate arcu, vel tempus metus leo non est. Etiam sit   amet lectus quis est congue mollis. Phasellus congue lacus eget neque. Phasellus ornare, ante vitae consectetuer consequat, purus sapien ultricies dolor, et mollis pede metus eget nisi. Praesent sodales velit quis augue. Cras suscipit, urna at aliquam rhoncus, urna quam viverra nisi, in interdum massa nibh nec erat.
+          </p>
+      </section>
+   </article>
+</main>
+
+<!—Panel boczny, przy u¿yciu znacznika aside -->
+<aside role=”complementary”>
+<!—Pocz¹tek sekcji  -->
+   <section>
+   <h2>Polecam</h2>
+      <figure>
+<!—Element obrazkowy :P -->
+         <picture>
+         <img src="polecamy.jpg" alt="Polecana fotka">
+         <p>Polecana fotka</p>
+         </picture>
+          <figcaption>Bardzo mocno polecana fotka</figcaption>
+      </figure>
+   </section>
+</aside>
+
+<!—Stopka ca³ej strony, u¿ycie znacznika footer -->
+<footer role=”contentinfo”>
+<p>Skopiowano wy³¹cznie na do celów samokszta³cenia</p>
+</footer>
+
+<!—Skrypty Javascript -->
+<script src=”javascript.js”> </script>
+
+<!—Koniec body -->
+</body>
+
+<!—Koniec html -->
+</html>
